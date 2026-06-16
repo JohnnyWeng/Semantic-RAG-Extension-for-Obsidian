@@ -1,0 +1,4 @@
+{
+  "ollamaUrl": "http://localhost:11434",
+  "embeddingModel": "bge-m3:latest"
+}

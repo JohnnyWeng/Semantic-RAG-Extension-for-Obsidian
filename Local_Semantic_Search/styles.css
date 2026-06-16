@@ -1,0 +1,60 @@
+/* styles.css for Local Semantic Search
+  Minimal, clean, and uses Obsidian's native theme variables.
+*/
+
+/* Style the main search input box to look modern */
+.modal input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    font-size: 16px;
+    margin-bottom: 12px;
+    transition: box-shadow 0.2s ease;
+}
+
+/* Highlight the input box when actively typing */
+.modal input[type="text"]:focus {
+    box-shadow: 0 0 0 2px var(--interactive-accent);
+    outline: none;
+}
+
+/* Style the Search button to mimic native Obsidian buttons */
+.modal button {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+}
+
+/* Add a hover effect for the button */
+.modal button:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* Style the individual search result container */
+.modal div > a {
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 5px;
+    color: var(--text-normal);
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Make results pop slightly when hovering over them */
+.modal div > a:hover {
+    background-color: var(--background-secondary-alt);
+    transform: translateX(4px);
+    color: var(--text-accent);
+}
