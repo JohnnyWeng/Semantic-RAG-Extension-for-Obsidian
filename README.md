@@ -4,6 +4,7 @@ Obsidian Semantic Search extension with bge-m3 model.
 <img width="578" height="191" alt="rag" src="https://github.com/user-attachments/assets/3889e5b9-eff6-4814-9f17-c133d6d81679" />
 
 🔍 Obsidian Local RAG Search (Semantic Search)
+
 Many times it is hard to search for the right notes, especially when your vault grows too large. Even when searching with specific keywords, traditional search often pops up way too many irrelevant results in the Obsidian note-taking app.
 
 To solve this, I created this local, privacy-first Obsidian extension. It reads your notes and generates an offline vector database using the bge-m3 model via Ollama. Instead of looking for exact word matches, it searches by concept and meaning, instantly finding the top 7 most conceptually similar paragraphs in your vault and linking you directly to them.
